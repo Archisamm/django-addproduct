@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    main {
+        .card {
+            height: 350px;
+
+            .card-img {
+                /* height: 200px; */
+                /* overflow: hidden; */
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .card-body {
+                height: 130px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h6 {
+                    height: 10px;
+                }
+
+            }
+        }
+    }
+
+
+
+    .clamp {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        /* -webkit-line-clamp: 1; */
+        overflow: hidden;
+
+    }
+
+}

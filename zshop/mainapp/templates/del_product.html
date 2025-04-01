@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Add product
+
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <form method="post" class="form-control">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-danger"> confirm Delete</button>
+    </form>
+</div>
+
+<a href="{% url 'prod_details' product.pk %}" class="btn btn-outline-primary">Cancel</a>
+{% endblock %}
