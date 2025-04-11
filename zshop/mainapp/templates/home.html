@@ -31,7 +31,7 @@ Home
       <small class="clamp">
         {{product.desc}}
       </small>
-      <a href="" class="btn btn-primary">Add to Cart</a>
+      <a href="{% url 'add_to_cart' product.pk %}" class="btn btn-primary">Add to Cart</a>
 
     </div>
 

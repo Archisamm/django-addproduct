@@ -24,7 +24,7 @@ Details :{{ product.name }}
                 </p>
             </div>
             <div class="row">
-               <a href="" class="btn btn-primary w-50 center">Add to Cart</a>
+               <a href="{% url 'add_to_cart' product.pk %}" class="btn btn-primary w-50 center">Add to Cart</a>
                <a href="{% url 'edit_product' product.pk %}" class="btn btn-primary w-50 center">Edit Product</a> 
                <a href="{% url 'del_product' product.pk %}" class="btn btn-danger">Delete</a>
 
