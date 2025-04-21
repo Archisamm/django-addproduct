@@ -23,3 +23,6 @@ class CartItem(models.Model):
 
     def __str__(self):
         return f"{self.product.name} added by {self.user.username} at {self.date_added}"
+    
+    def get_total(self):
+        return self.product.price * self.quantity
