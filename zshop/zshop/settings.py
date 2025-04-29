@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainapp',
     'authentication',
-    'cart'
+    'cart',
+    'orders',
+    'payments'
 ]
 
 MIDDLEWARE = [
@@ -130,3 +132,24 @@ MEDIA_URL = '/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+RAZORPAY_KEY_ID = "rzp_test_4yBLdVqSjJ2qyB"
+
+RAZORPAY_KEY_SECRET = "7oehdzGnqcQiWEnTaeWGGl07"
+
+
+CSRF_TRUSTED_ORIGINS = [
+
+    'https://api.razorpay.com',
+]
+TIME_ZONE = 'Asia/kolkata'
+USE_TZ = True
+
+
+LOGIN_URL = 'signin'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
